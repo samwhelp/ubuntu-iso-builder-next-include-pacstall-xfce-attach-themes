@@ -1,0 +1,130 @@
+
+
+##
+## # skeleton-head
+##
+
+
+
+
+##
+## ## apt
+##
+
+core-apt-init
+
+
+
+
+##
+## ## locale
+##
+
+build-locale-config-install
+build-locale-package-install
+
+
+
+
+##
+## ## apt / limit
+##
+
+core-apt-limit-base-files-holding
+core-apt-limit-no-snapd
+
+
+
+
+##
+## ## coreutils
+##
+
+core-coreutils-from-gnu
+
+
+
+
+##
+## ## dist-upgrade
+##
+
+core-dist-upgrade
+
+
+
+
+
+
+
+
+##
+## ## hostname
+##
+
+base-hostname-config
+
+
+
+
+##
+## ## systemd
+##
+
+base-systemd-package-install
+
+
+
+
+##
+## ## machine-id
+##
+
+base-machine-id-config
+
+
+
+
+##
+## ## initctl-diversion
+##
+
+base-initctl-diversion-install
+
+
+
+
+##
+## ## network
+##
+
+base-network-package-install
+base-network-config-install
+
+
+
+
+##
+## ## kernel
+##
+
+core-kernel-package-install
+
+
+
+
+##
+## ## bootloader
+##
+
+core-bootloader-package-install
+
+
+
+
+##
+## ## casper (live-boot)
+##
+
+live-casper-package-install
+live-casper-config-install

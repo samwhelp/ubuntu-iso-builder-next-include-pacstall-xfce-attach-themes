@@ -1,0 +1,35 @@
+
+
+##
+## # Build Essential
+##
+
+
+
+
+##
+## ## Package / dconf-cli
+##
+
+## for `sudo dconf update` [See: base-dconf-system-db-init]
+dconf-cli
+
+
+
+
+##
+## ## Package / gsettings
+##
+
+## for `sudo glib-compile-schemas /usr/share/glib-2.0/schemas` [See: base-gsettings-schema-compile]
+libglib2.0-bin
+
+
+
+
+##
+## ## Package / sassc
+##
+
+## for install extra-gtk-theme
+sassc

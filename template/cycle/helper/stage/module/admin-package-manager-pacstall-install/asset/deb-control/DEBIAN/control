@@ -1,0 +1,15 @@
+Package: pacstall
+Version: 0.1.1
+Architecture: all
+Maintainer: Develop Team <develop@home.heaven>
+Installed-Size: 651
+Depends: bash, curl, wget, git, unzip, zstd, tar, gzip, sensible-utils, iputils-ping, lsb-release, aptitude, bubblewrap, build-essential, jq, distro-info-data, gettext
+Recommends: axel, ninja-build, meson, spdx-licenses
+Section: admin
+Priority: optional
+Homepage: https://github.com/samwhelp/pacstall-packaging
+Description: An AUR-inspired package manager for Ubuntu
+ Pacstall is the AUR Ubuntu wishes it had.
+ It takes the concept of the AUR and puts a spin on it,
+ making it easier to install and update downstream programs,
+ without scouring github repos and the likes.

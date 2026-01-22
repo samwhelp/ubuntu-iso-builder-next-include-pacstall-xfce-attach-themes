@@ -1,0 +1,84 @@
+
+
+##
+## # skeleton-tail
+##
+
+
+
+##
+## ## initramfs
+##
+
+core-initramfs-update
+
+
+
+
+##
+## ## locale
+##
+
+live-locale-config-from-args
+build-locale-gen
+
+
+
+
+##
+## ## dconf
+##
+
+base-dconf-system-db-init
+
+
+
+
+##
+## ## gsettings
+##
+
+base-gsettings-schema-compile
+
+
+
+
+
+
+
+
+##
+## ## final package remove
+##
+
+factory-package-remove
+
+
+
+
+##
+## ## final clean
+##
+
+clean-apt-cache-file
+clean-root-home-dir-file
+clean-system-tmp-file
+clean-system-log-file
+
+
+
+
+##
+## ## machine-id
+##
+
+base-machine-id-remove
+
+
+
+
+##
+## ## initctl-diversion
+##
+
+base-initctl-diversion-remove
