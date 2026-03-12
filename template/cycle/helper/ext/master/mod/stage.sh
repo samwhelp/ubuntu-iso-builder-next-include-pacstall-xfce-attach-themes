@@ -12,8 +12,6 @@ mod_stage_rundown_process_all () {
 
 
 	mod_stage_rundown_process_factory_install
-
-
 	mod_stage_rundown_process_basic_install
 
 
@@ -22,13 +20,15 @@ mod_stage_rundown_process_all () {
 
 
 	mod_stage_rundown_process_master_install
-
-
 	mod_stage_rundown_process_installer_install
 
 
-	mod_stage_rundown_process_custom_tail
 	mod_stage_rundown_process_skeleton_tail
+	mod_stage_rundown_process_custom_tail
+
+
+	mod_stage_rundown_process_skeleton_finish
+	mod_stage_rundown_process_custom_finish
 
 
 }
@@ -83,6 +83,7 @@ mod_stage_rundown_process_master_install () {
 
 }
 
+
 mod_stage_rundown_process_basic_install () {
 
 	local module_root_dir_path="${REF_MASTER_STAGE_MODULE_DIR_PATH}"
@@ -102,6 +103,7 @@ mod_stage_rundown_process_basic_install () {
 	util_stage_rundown_process "${rundown_file_path}" "${module_root_dir_path}"
 
 }
+
 
 mod_stage_rundown_process_installer_install () {
 
@@ -153,7 +155,6 @@ mod_stage_rundown_process_skeleton_head () {
 }
 
 
-
 mod_stage_rundown_process_skeleton_tail () {
 
 	local module_root_dir_path="${REF_MASTER_STAGE_MODULE_DIR_PATH}"
@@ -175,12 +176,32 @@ mod_stage_rundown_process_skeleton_tail () {
 }
 
 
-
 mod_stage_rundown_process_skeleton_middle () {
 
 	local module_root_dir_path="${REF_MASTER_STAGE_MODULE_DIR_PATH}"
 
 	local rundown_file_path="${REF_MASTER_STAGE_RUNDOWN_DIR_PATH}/skeleton-middle.txt"
+
+
+	util_error_echo
+	util_error_echo "##"
+	util_error_echo "## ## Rundown"
+	util_error_echo "##"
+	util_error_echo
+	util_error_echo "[Rundown]: ${rundown_file_path}"
+	util_error_echo
+
+
+	util_stage_rundown_process "${rundown_file_path}" "${module_root_dir_path}"
+
+}
+
+
+mod_stage_rundown_process_skeleton_finish () {
+
+	local module_root_dir_path="${REF_MASTER_STAGE_MODULE_DIR_PATH}"
+
+	local rundown_file_path="${REF_MASTER_STAGE_RUNDOWN_DIR_PATH}/skeleton-finish.txt"
 
 
 	util_error_echo
@@ -226,7 +247,6 @@ mod_stage_rundown_process_custom_head () {
 }
 
 
-
 mod_stage_rundown_process_custom_tail () {
 
 	local module_root_dir_path="${REF_MASTER_STAGE_MODULE_DIR_PATH}"
@@ -248,12 +268,32 @@ mod_stage_rundown_process_custom_tail () {
 }
 
 
-
 mod_stage_rundown_process_custom_middle () {
 
 	local module_root_dir_path="${REF_MASTER_STAGE_MODULE_DIR_PATH}"
 
 	local rundown_file_path="${REF_MASTER_STAGE_RUNDOWN_DIR_PATH}/custom-middle.txt"
+
+
+	util_error_echo
+	util_error_echo "##"
+	util_error_echo "## ## Rundown"
+	util_error_echo "##"
+	util_error_echo
+	util_error_echo "[Rundown]: ${rundown_file_path}"
+	util_error_echo
+
+
+	util_stage_rundown_process "${rundown_file_path}" "${module_root_dir_path}"
+
+}
+
+
+mod_stage_rundown_process_custom_finish () {
+
+	local module_root_dir_path="${REF_MASTER_STAGE_MODULE_DIR_PATH}"
+
+	local rundown_file_path="${REF_MASTER_STAGE_RUNDOWN_DIR_PATH}/custom-finish.txt"
 
 
 	util_error_echo
