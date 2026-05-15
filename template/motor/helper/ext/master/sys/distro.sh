@@ -598,7 +598,8 @@ sys_distro_iso_create_boot_image_for_uefi_via_grub_mkimage () {
 			chain \
 			efifwsetup \
 			efi_gop \
-			efi_uga \
+			efinet \
+			efitextmode \
 			ls \
 			search \
 			search_label \

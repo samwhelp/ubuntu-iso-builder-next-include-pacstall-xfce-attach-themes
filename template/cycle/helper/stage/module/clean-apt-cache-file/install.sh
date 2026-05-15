@@ -51,21 +51,21 @@ mod_module_clean_apt_cache_file () {
 
 
 	util_error_echo
-	util_error_echo apt-get autoremove
+	util_error_echo apt-get autoremove -y
 	util_error_echo
-	apt-get autoremove
+	apt-get autoremove -y
 
 
 	util_error_echo
-	util_error_echo apt-get autoclean
+	util_error_echo apt-get autoclean -y
 	util_error_echo
-	apt-get autoclean
+	apt-get autoclean -y
 
 
 	util_error_echo
-	util_error_echo apt-get clean
+	util_error_echo apt-get clean -y
 	util_error_echo
-	apt-get clean
+	apt-get clean -y
 
 
 	util_error_echo
