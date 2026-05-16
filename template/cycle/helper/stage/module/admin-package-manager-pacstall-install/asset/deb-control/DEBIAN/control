@@ -3,7 +3,7 @@ Version: 0.1.1
 Architecture: all
 Maintainer: Develop Team <develop@home.heaven>
 Installed-Size: 651
-Depends: bash, curl, wget, git, unzip, zstd, tar, gzip, sensible-utils, iputils-ping, lsb-release, aptitude, bubblewrap, build-essential, jq, distro-info-data, gettext
+Depends: bash, curl, wget, git, unzip, zstd, tar, gzip, sensible-utils, iputils-ping, lsb-release, aptitude, bubblewrap, jq, distro-info-data, gettext
 Recommends: axel, ninja-build, meson, spdx-licenses
 Section: admin
 Priority: optional
