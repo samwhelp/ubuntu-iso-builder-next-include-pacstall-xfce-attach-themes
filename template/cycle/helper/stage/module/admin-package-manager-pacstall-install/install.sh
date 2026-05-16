@@ -100,7 +100,6 @@ local run_cmd=$(cat << __EOF__
 		lsb-release
 		aptitude
 		bubblewrap
-		build-essential
 		jq
 		distro-info-data
 		gettext
