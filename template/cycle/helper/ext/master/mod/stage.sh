@@ -1,6 +1,37 @@
 
 
 ################################################################################
+### Head: Rundown
+##
+
+
+##
+## ## Dir: template/cycle/helper/stage/rundown
+##
+
+
+##
+## skeleton-head.txt
+## custom-head.txt
+## factory-install.txt
+## basic-install.txt
+## skeleton-middle.txt
+## custom-middle.txt
+## master-install.txt
+## installer-install.txt
+## skeleton-tail.txt
+## custom-tail.txt
+## skeleton-finish.txt
+## custom-finish.txt
+##
+
+
+##
+### Tail: Rundown
+################################################################################
+
+
+################################################################################
 ### Head: Master / Mod / Stage
 ##
 
